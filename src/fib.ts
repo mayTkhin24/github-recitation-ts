@@ -1,12 +1,6 @@
 // util function that computes the fibonacci numbers
-module.exports = function fibonacci(n) {
-  if (n < 0) {
-    return -1;
-  } else if (n == 0) {
-    return 0;
-  } else if (n == 1) {
-    return 1;
-  }
+export default function fibonacci(num: number): number {
+  if (num <= 1) return num;
+  return fibonacci(num - 1) + fibonacci(num - 2);
+}
 
-  return fibonacci(n - 1) + fibonacci(n - 2);
-};
