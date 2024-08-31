@@ -2,6 +2,7 @@
 
 import express from 'express';
 import { Request, Response } from 'express';
+import fibonacci from './fib';  // Import the Fibonacci function
 
 export default (req: Request, res: Response) => {
   // Safely get the number parameter from request
