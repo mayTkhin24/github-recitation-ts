@@ -10,7 +10,7 @@ export default (req: Request, res: Response) => {
     const fibN: number = fibonacci(num);
 
     // Determine the result message
-    let result: string = `fibonacci(${num}) is ${fibN}`;
+    let result = `fibonacci(${num}) is ${fibN}`;
 
     if (fibN < 0) {
       result = `fibonacci(${num}) is undefined`;
